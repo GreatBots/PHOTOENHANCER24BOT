@@ -47,9 +47,9 @@ async def start(client, message):
         except UserNotParticipant:
             # If the user is not a participant, prompt them to join
             await message.reply_text(
-                text="**❤️ Pʟᴇᴀꜱᴇ Jᴏɪɴ Mʏ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ Bᴇғᴏʀᴇ Uꜱɪɴɢ Mᴇ ❤️**",
+                text="**Join Our Updates Channel For Using This Bot**",
                 reply_markup=InlineKeyboardMarkup([
-                    [InlineKeyboardButton(text="➕ Jᴏɪɴ Mʏ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ ➕", url=f"https://t.me/{FSUB_CHANNEL}")]
+                    [InlineKeyboardButton(text="Join Updates Channel", url=f"https://t.me/{FSUB_CHANNEL}")]
                 ])
             )
             return
